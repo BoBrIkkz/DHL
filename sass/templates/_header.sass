@@ -1,0 +1,76 @@
+.header
+  background-color: $yellow
+  &__navigation
+    height: 120px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__button
+      width: 50px
+      height: 50px
+      background: url(../img/header-button-icon.png) $red center no-repeat
+      border: none
+      border-radius: 25px
+      text-transform: uppercase
+      &:hover
+        cursor: pointer
+        transition: 0.3s
+        box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4)
+    &__links
+      display: flex
+      justify-content: space-between
+      &__item
+        font-family: 'Poppins', sans-serif
+        text-decoration: none
+        color: $red
+        margin-right: 3.57rem
+        font-weight: 600
+        border-bottom: 2px solid transparent
+        text-transform: uppercase
+        position: relative
+        &:hover
+          &::before
+            position: absolute
+            content: ''
+            display: flex
+            width: 100%
+            height: 3px
+            border-bottom: 3px solid $red
+  &__contacts
+    color: white
+    text-decoration: none
+    &__center
+      margin-right: 2.143rem
+      color: white
+      text-decoration: none
+    &__profile
+      color: white
+      text-decoration: none
+      &::after
+        content: ''
+        position: absolute
+        top: 21px
+        margin-left: 0.5rem
+        border: solid white
+        border-width: 0 2px 2px 0
+        display: inline-block
+        padding: 2px
+        transform: rotate(45deg)
+  &__language
+    color: white
+    text-decoration: none
+    &::after
+      content: ''
+      position: absolute
+      top: 21px
+      margin-left: 0.5rem
+      border: solid white
+      border-width: 0 2px 2px 0
+      display: inline-block
+      padding: 2px
+      transform: rotate(45deg)
+
+  &__upper
+    display: flex
+    justify-content: space-between
+    padding: 17px

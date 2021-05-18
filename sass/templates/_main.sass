@@ -1,0 +1,70 @@
+.main
+  margin-top: -48px
+  background: linear-gradient(45deg, $red 25%, rgba(255, 204, 0, 0.01) 70%, rgba(255, 204, 0, 0) 100%), url(../../img/main-bg.jpg) center / cover
+  color: white
+  &__tittle
+    padding-top: 12.8rem
+    font-size: 5rem
+    &::after
+      content: ''
+      display: flex
+      margin-top: 40px
+      width: 100px
+      height: 4px
+      background-color: $yellow
+  &__text
+    color: $yellow
+    max-width: 700px
+    font-style: normal
+    line-height: normal
+    font-size: 1.3rem
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+  &__tagline
+    font-size: 1.43rem
+    font-weight: 600
+    font-style: normal
+    letter-spacing: 0.6px
+    line-height: normal
+    text-transform: uppercase
+    margin-top: 40px
+    display: flex
+    justify-content: space-between
+    max-width: 460px
+    margin-bottom: 40px
+    &--dot
+      font-weight: 700
+      color: $yellow
+  &__buttons
+    display: flex
+    justify-content: space-between
+    max-width: 362px
+    padding-bottom: 180px
+  &__button
+    padding: 20px 30px
+    border-radius: 25px
+    max-width: 192px
+    max-height: 50px
+    display: flex
+    border: 2px solid white
+    background-color: $yellow
+    color: $red
+    font-weight: 700
+    line-height: 30px
+    align-items: center
+    border: 0
+    font-size: 12px
+    font-style: normal
+    &:hover
+      cursor: pointer
+      transition: 0.4s
+      box-shadow: 0 10px 18px rgba(255, 204, 0, 0.5)
+    &--white
+      color: white
+      background-color: transparent
+      border: 2px solid white
+      &:hover
+        cursor: pointer
+        transition: 0.4s
+        box-shadow: 0 10px 18px rgba(255, 255, 255, 0.5)
