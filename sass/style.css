@@ -976,4 +976,176 @@ html .row {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+.excellence {
+  background-color: #ba0000;
+  color: white;
+}
+
+.excellence__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0px;
+}
+
+.excellence__tittle {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.excellence__text {
+  max-width: 740px;
+  font-style: normal;
+  letter-spacing: 0.48px;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.excellence__button {
+  height: 50px;
+  width: 150px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  background-color: #a00000;
+  border: 0;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  right: 80%;
+}
+
+.excellence__button:hover {
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 10px 18px rgba(160, 0, 0, 0.4);
+          box-shadow: 0 10px 18px rgba(160, 0, 0, 0.4);
+}
+
+.excellence__button__wrapper {
+  position: relative;
+}
+
+.logotypes {
+  padding: 70px 0px;
+}
+
+.logotypes__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logotypes__themeforest {
+  background: url(../img/themeforest.png) no-repeat center;
+  width: 270px;
+  height: 129px;
+  border: 2px solid rgba(186, 0, 0, 0.1);
+}
+
+.logotypes__themeforest:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid #ba0000;
+}
+
+.logotypes__photodune {
+  background: url(../img/photodune.png) no-repeat center;
+  width: 270px;
+  height: 129px;
+  border: 2px solid rgba(186, 0, 0, 0.1);
+}
+
+.logotypes__photodune:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid #ba0000;
+}
+
+.logotypes__graphicriver {
+  background: url(../img/graphicriver.png) no-repeat center;
+  width: 270px;
+  height: 129px;
+  border: 2px solid rgba(186, 0, 0, 0.1);
+}
+
+.logotypes__graphicriver:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid #ba0000;
+}
+
+.logotypes__codecanyon {
+  background: url(../img/codecanyon.png) no-repeat center;
+  width: 270px;
+  height: 129px;
+  border: 2px solid rgba(186, 0, 0, 0.1);
+}
+
+.logotypes__codecanyon:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid #ba0000;
+}
+
+.footer {
+  height: 311px;
+  background: url(../img/footer-bg.png) center/cover;
+}
+
+.footer__li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  text-transform: uppercase;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__tittle {
+  color: #ba0000;
+}
+
+.footer__text {
+  color: #777777;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+.yellow {
+  color: #ffcc00;
+}
+
+.blue {
+  color: #017edf;
+}
 /*# sourceMappingURL=style.css.map */
