@@ -25,17 +25,17 @@
         color: $red
         margin-right: 3.57rem
         font-weight: 600
-        border-bottom: 2px solid transparent
         text-transform: uppercase
         position: relative
         &:hover
           &::before
-            position: absolute
             content: ''
+            position: absolute
             display: flex
             width: 100%
             height: 3px
             border-bottom: 3px solid $red
+            bottom: -51px
   &__contacts
     color: white
     text-decoration: none
