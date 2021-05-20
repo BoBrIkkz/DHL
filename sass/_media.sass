@@ -1,7 +1,10 @@
 @media screen and ( max-width: 1270px )
   .header
-    &__navigation__links__item
-      display: none
+    &__navigation
+      &__search
+        margin-left: 530px
+      &__links__item
+        display: none
   .row
     display: flex
     flex-wrap: wrap
@@ -35,17 +38,33 @@
     &__cards
       justify-content: center!important
 @media screen and ( max-width: 1170px )
+  .header
+    &__navigation
+      &__search
+        margin-left: 350px
   .excellence
     &__button
       top: 100%!important
 @media screen and ( max-width: 924px )
+  .header
+    &__navigation
+      &__search
+        margin-left: 300px
   .provider
     &__row
       justify-content: center!important
 @media screen and ( max-width: 876px )
+  .header
+    &__navigation
+      &__search
+        margin-left: 170px
   .services__tittle--bg
     display: none
 @media screen and ( max-width: 676px )
+  .header
+    &__navigation
+      &__search
+        margin-left: 0px
   .col-25
     flex-basis: 50%
     margin-top: 0
@@ -106,6 +125,8 @@
 @media screen and ( max-width: 420px )
   .header
     font-size: 12px
+    &__navigation__search__input
+      max-width: 120px
   .provider
     &__img
       max-width: 100%
