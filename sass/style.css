@@ -364,7 +364,8 @@ html {
 }
 
 html .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 80%;
   margin: auto;
 }
 
@@ -434,6 +435,204 @@ html .row {
   font-family: "Poppins - Light";
   src: url("../fonts/Poppins-Light.ttf") format("ttf");
   font-display: swap;
+}
+
+@media screen and (max-width: 1270px) {
+  .header__navigation__links__item {
+    display: none;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .col-25 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .col-33 {
+    margin-bottom: 220px;
+  }
+  .col-50 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .logotypes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .logotypes__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .logotypes__card {
+    margin-top: 30px;
+  }
+  .express {
+    margin-top: 40px !important;
+  }
+  .express__img {
+    display: none;
+  }
+  .express__col-50 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .express__card {
+    width: 100%;
+    height: 100%;
+  }
+  .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .services__cards {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .excellence__button {
+    top: 100% !important;
+  }
+}
+
+@media screen and (max-width: 924px) {
+  .provider__row {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 876px) {
+  .services__tittle--bg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .col-25 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin-top: 0;
+  }
+  .services__tittle {
+    font-size: 40px !important;
+  }
+  .logotypes__content {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .main__buttons {
+    padding-bottom: 90px !important;
+  }
+  .excellence__tittle--text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .excellence__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0px !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .express {
+    margin-bottom: 2px !important;
+  }
+  .col-33 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    margin-bottom: 220px;
+  }
+  .provider {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(80%, #ffcc00), to(rgba(186, 0, 0, 0))) !important;
+    background: linear-gradient(to top, #ffcc00 80%, rgba(186, 0, 0, 0) 100%) !important;
+  }
+  .provider__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .provider__row {
+    width: 100% !important;
+  }
+  .provider__card__airline {
+    margin-bottom: -220px !important;
+  }
+  .provider__video {
+    display: none !important;
+  }
+  .provider__tittle {
+    font-size: 50px !important;
+  }
+  .container {
+    width: 90% !important;
+  }
+  .container--mobile {
+    width: 100% !important;
+  }
+  .col-33 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .services {
+    margin-top: 0;
+  }
+  .services__tittle {
+    font-size: 30px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 0px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header {
+    font-size: 12px;
+  }
+  .provider__img {
+    max-width: 100%;
+  }
 }
 
 .header {
@@ -891,8 +1090,8 @@ html .row {
 }
 
 .express__card {
-  width: 570px;
-  height: 533px;
+  max-width: 570px;
+  max-height: 533px;
   background: #ba0000;
   display: -webkit-box;
   display: -ms-flexbox;
