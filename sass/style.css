@@ -500,6 +500,10 @@ html .row {
     width: 100%;
     height: 100%;
   }
+  .express__card--logistics {
+    width: 100%;
+    height: 100%;
+  }
   .services {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -983,6 +987,17 @@ html .row {
   font-style: normal;
   letter-spacing: normal;
   line-height: 26px;
+  position: relative;
+}
+
+.services__card__more::after {
+  content: '';
+  position: absolute;
+  border-top: 5px solid transparent;
+  border-left: 5px solid red;
+  border-bottom: 5px solid transparent;
+  margin-top: 9px;
+  margin-left: 5px;
 }
 
 .services__card__more:hover {
@@ -1105,6 +1120,19 @@ html .row {
 
 .provider__card__text {
   color: #777777;
+  margin-left: 20px;
+  position: relative;
+  line-height: 24px;
+}
+
+.provider__card__text::before {
+  content: '';
+  position: absolute;
+  border-top: 5px solid transparent;
+  border-left: 5px solid red;
+  border-bottom: 5px solid transparent;
+  margin-top: 7px;
+  margin-left: -20px;
 }
 
 .express {
@@ -1134,9 +1162,23 @@ html .row {
           flex-direction: column;
 }
 
+.express__card--logistics {
+  max-width: 570px;
+  max-height: 533px;
+  background: #ffcc00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .express__card__text {
   padding-left: 20px;
   padding-top: 18px;
+  font-weight: 500;
 }
 
 .express__card__button {
@@ -1148,6 +1190,18 @@ html .row {
 }
 
 .express__card__button:hover {
+  cursor: pointer;
+}
+
+.express__card__button--logistics {
+  height: 50px;
+  width: 50px;
+  background: url(../img/arrow-down.png) no-repeat center;
+  border: none;
+  border-left: 2px solid #ba0000;
+}
+
+.express__card__button--logistics:hover {
   cursor: pointer;
 }
 
@@ -1167,6 +1221,14 @@ html .row {
   background-color: #ba0000;
   color: white;
   font-weight: 600;
+}
+
+.express__button:hover {
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4);
+          box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4);
 }
 
 .express__logistics__button {
@@ -1206,6 +1268,30 @@ html .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.express__field--logistics {
+  border: 2px solid #ba0000;
+  padding: 0px;
+  margin: 10px 0px;
+  color: #ba0000;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.off {
+  display: none !important;
+}
+
+.toggle {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .excellence {
@@ -1359,6 +1445,18 @@ html .row {
   letter-spacing: normal;
   line-height: 24px;
   text-decoration: none;
+  position: relative;
+  margin-left: 10px;
+}
+
+.footer__text::before {
+  content: '';
+  position: absolute;
+  border-top: 5px solid transparent;
+  border-left: 5px solid red;
+  border-bottom: 5px solid transparent;
+  margin-top: 7px;
+  margin-left: -10px;
 }
 
 .footer__row {

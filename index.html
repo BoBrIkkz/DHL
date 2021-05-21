@@ -98,7 +98,9 @@
             <h3 class="services__card__tittle--last">DHl Worldwide</h3>
             <p class="services__card__text--last">When an unknown prot printer type and scra</p>
             <div class="dropdown">
-              <span class="dropdown__text">Location</span>
+              <div class="dropdown__menu">
+                <span class="dropdown__text">Location</span>
+              </div>
               <button class="dropdown__button"></button>
             </div>
             <button class="services__card__button">EXPLORE</button>
@@ -152,10 +154,10 @@
     <div class="container container--mobile">
     <div class="row">
       <div class="col-50 express__col-50">
-        <div class="express__card">
+        <div class="express__card off toggle" action="#" method="post">
           <div class="express__card__buttons">
-            <button class="express__button">EXPRESS</button>
-            <button class="express__button express__logistics__button">LOGISTICS</button>
+            <button class="express__button express__button">EXPRESS</button>
+            <button class="express__button express__logistics__button express__logistics__button--toggle">LOGISTICS</button>
           </div>
           <div class="express__fields">
             <div class="express__field express__track">
@@ -176,6 +178,30 @@
             </div>
           </div>
         </div>
+                <div class="express__card--logistics off" action="#" method="post">
+                  <div class="express__card__buttons">
+                    <button class="express__button express__button--toggle">EXPRESS</button>
+                    <button class="express__button express__logistics__button">LOGISTICS</button>
+                  </div>
+                  <div class="express__fields">
+                    <div class="express__field--logistics express__track">
+                      <span class="express__card__text">Track your logistic</span>
+                      <button class="express__card__button--logistics"></button>
+                    </div>
+                    <div class="express__field--logistics express__login">
+                      <span class="express__card__text">New login</span>
+                      <button class="express__card__button--logistics"></button>
+                    </div>
+                    <div class="express__field--logistics express__point">
+                      <span class="express__card__text">Find logistic point</span>
+                      <button class="express__card__button--logistics"></button>
+                    </div>
+                    <div class="express__field--logistics express__service">
+                      <span class="express__card__text">find a logistic service</span>
+                      <button class="express__card__button--logistics"></button>
+                    </div>
+                  </div>
+                </div>
       </div>
       <div class="col-50 express__img">
 

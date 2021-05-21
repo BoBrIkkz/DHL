@@ -36,3 +36,14 @@
       color: $red
     &__text
       color: #777777
+      margin-left: 20px
+      position: relative
+      line-height: 24px
+      &::before
+        content: ''
+        position: absolute
+        border-top: 5px solid transparent
+        border-left: 5px solid red
+        border-bottom: 5px solid transparent
+        margin-top: 7px
+        margin-left: -20px

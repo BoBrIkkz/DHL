@@ -12,15 +12,30 @@
     background: $red
     display: flex
     flex-direction: column
+    &--logistics
+      max-width: 570px
+      max-height: 533px
+      background: $yellow
+      display: flex
+      flex-direction: column
     &__text
       padding-left: 20px
       padding-top: 18px
+      font-weight: 500
     &__button
       height: 50px
       width: 50px
       background: url(../img/arrow-down-white.png) no-repeat center
       border: none
       border-left: 2px solid white
+      &:hover
+        cursor: pointer
+    &__button--logistics
+      height: 50px
+      width: 50px
+      background: url(../img/arrow-down.png) no-repeat center
+      border: none
+      border-left: 2px solid $red
       &:hover
         cursor: pointer
 
@@ -34,6 +49,10 @@
     background-color: $red
     color: white
     font-weight: 600
+    &:hover
+      cursor: pointer
+      transition: 0.4s
+      box-shadow: 0 10px 18px rgba(186, 0, 0, 0.4)
   &__logistics__button
     background-color: $yellow
     color: $red
@@ -54,3 +73,16 @@
     text-transform: uppercase
     display: flex
     justify-content: space-between
+    &--logistics
+      border: 2px solid $red
+      padding: 0px
+      margin: 10px 0px
+      color: $red
+      text-transform: uppercase
+      display: flex
+      justify-content: space-between
+
+.off
+  display: none!important
+.toggle
+  display: flex!important

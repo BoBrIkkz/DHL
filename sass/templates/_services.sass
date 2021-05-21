@@ -62,6 +62,15 @@
       font-style: normal
       letter-spacing: normal
       line-height: 26px
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        border-top: 5px solid transparent
+        border-left: 5px solid red
+        border-bottom: 5px solid transparent
+        margin-top: 9px
+        margin-left: 5px
       &:hover
         cursor: pointer
     &__button
