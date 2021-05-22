@@ -16,26 +16,31 @@
     <div class="background-color--red">
       <div class="container">
             <div class="header__upper">
-          <a href="#" class="header__language">English</a>
+              <select class="header__language__choose">
+                <option value="en" class="header__language">English</option>
+                <option value="ru" class="header__language">Русский</option>
+              </select>
+          
           <div class="header__contacts">
-            <a href="#" class="header__contacts__center">Contact Center</a>
-            <a href="#" class="header__contacts__profile">Country Profile</a>
+            <a href="#" class="header__contacts__center lng-Contact__Center">Contact Center</a>
+            <a href="#" class="header__contacts__profile lng-Country__Profile">Country Profile</a>
           </div>
         </div>  
     </div>
     </div>
     <div class="container header__navigation">
-      <img src="img/logo.jpg" alt="DHL">
+      <a href="" class="header__logo"><img src="img/logo.jpg" alt="DHL"></a>
+      
         <nav class="header__navigation__links">
-          <a href="#" class="header__navigation__links__item">Express</a>
-          <a href="#" class="header__navigation__links__item">Parcel & Ecommerce</a>
-          <a href="#" class="header__navigation__links__item">Logistics</a>
-          <a href="#" class="header__navigation__links__item">Mail</a>
-          <a href="#" class="header__navigation__links__item">Press</a>
-          <a href="#" class="header__navigation__links__item">About</a>
+          <a href="#" class="header__navigation__links__item lng-item__express">Express</a>
+          <a href="#" class="header__navigation__links__item lng-item__Parcel">Parcel & Ecommerce</a>
+          <a href="#" class="header__navigation__links__item lng-item__logistics">Logistics</a>
+          <a href="#" class="header__navigation__links__item lng-item__mail">Mail</a>
+          <a href="#" class="header__navigation__links__item lng-item__press">Press</a>
+          <a href="#" class="header__navigation__links__item lng-item__about">About</a>
         </nav>
           <form class="header__navigation__search" action="#" method="post">
-            <input class="header__navigation__search__input" type="text" placeholder="Search"/>
+            <input class="header__navigation__search__input" type="text" placeholder="DHL Express"/>
           </form>
         <button class="header__navigation__button button"></button>
 
@@ -44,19 +49,19 @@
   </header>
   <section class="main">
     <div class="container">
-      <h1 class="main__tittle">We Deliver<br> With Speed</h1>
-      <h2 class="main__text">When an unknown printer took a galley of type and scrambled<br> it to make a type specimen book. It
+      <h1 class="main__tittle lng-main__tittle">We Deliver<br> With Speed</h1>
+      <h2 class="main__text lng-main__text">When an unknown printer took a galley of type and scrambled<br> it to make a type specimen book. It
         has survived not only five centuries</h2>
         <div class="main__tagline">
-          <span class="main__tagline">Amazing</span>
+          <span class="main__tagline lng-amazing">Amazing</span>
           <span class="main__tagline main__tagline--dot">.</span>
-          <span class="main__tagline">Quick</span>
+          <span class="main__tagline lng-quick">Quick</span>
           <span class="main__tagline main__tagline--dot">.</span>
-          <span class="main__tagline">24/7 Supports</span>
+          <span class="main__tagline lng-supports">24/7 Supports</span>
         </div>
       <div class="main__buttons">
-        <button class="main__button">LEARN MORE</button>
-        <button class="main__button main__button--white">DHL WORLDWIDE</button>
+        <button class="main__button lng-more">LEARN MORE</button>
+        <button class="main__button main__button--white lng-worldwide">DHL WORLDWIDE</button>
       </div>
     </div>
   </section>
@@ -263,6 +268,7 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/lang.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

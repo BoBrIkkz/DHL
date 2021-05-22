@@ -13,6 +13,8 @@
       display: none
       &__input
         border: 2px solid $red
+        outline: none
+        max-width: 150px
 
     &__button
       width: 50px
@@ -66,8 +68,19 @@
         padding: 2px
         transform: rotate(45deg)
   &__language
-    color: white
+    color: $red
     text-decoration: none
+    background-color: transparent
+    border: 0
+    &:hover
+      cursor: pointer
+    &__choose
+      color: white
+      background-color: transparent
+      border: 0
+      outline: none
+      &:hover
+        cursor: pointer
     &::after
       content: ''
       position: absolute

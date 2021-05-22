@@ -686,6 +686,8 @@ html .row {
 
 .header__navigation__search__input {
   border: 2px solid #ba0000;
+  outline: none;
+  max-width: 150px;
 }
 
 .header__navigation__button {
@@ -766,8 +768,25 @@ html .row {
 }
 
 .header__language {
-  color: white;
+  color: #ba0000;
   text-decoration: none;
+  background-color: transparent;
+  border: 0;
+}
+
+.header__language:hover {
+  cursor: pointer;
+}
+
+.header__language__choose {
+  color: white;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.header__language__choose:hover {
+  cursor: pointer;
 }
 
 .header__language::after {
