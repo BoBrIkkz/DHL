@@ -59,9 +59,10 @@
         "ru": "DHL WORLDWIDE",
         "en": " DHL WORLDWIDE",
     }, 
-    "" :  {
-        "ru": "",
-        "en": "",
+    "location" :  {
+        "russia": "Russia",
+        "usa": "USA",
+        "none": "Location",
     }, 
     "" :  {
         "ru": "",

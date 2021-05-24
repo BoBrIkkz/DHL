@@ -653,7 +653,7 @@ html .row {
     max-width: 120px;
   }
   .provider__img {
-    max-width: 100%;
+    max-width: 337px;
   }
 }
 
@@ -814,7 +814,7 @@ html .row {
 
 .main {
   margin-top: -48px;
-  background: linear-gradient(45deg, #ba0000 25%, rgba(255, 204, 0, 0.01) 70%, rgba(255, 204, 0, 0) 100%), url(../../img/main-bg.jpg) center/cover;
+  background: linear-gradient(45deg, #ba0000 25%, rgba(255, 204, 0, 0.01) 70%, rgba(255, 204, 0, 0) 100%), url(../img/main-bg.jpg) center/cover;
   color: white;
 }
 
@@ -966,7 +966,7 @@ html .row {
 .services__card--last {
   background-color: #ba0000;
   max-width: 270px;
-  height: 340px;
+  max-height: 381px;
 }
 
 .services__card__tittle {
@@ -1034,6 +1034,7 @@ html .row {
   padding: 15px 40px;
   border: 0;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .services__card__button:hover {
@@ -1064,6 +1065,7 @@ html .row {
   font-style: normal;
   letter-spacing: normal;
   margin-left: 20px;
+  padding: 0;
 }
 
 .dropdown__button {
@@ -1077,6 +1079,22 @@ html .row {
   cursor: pointer;
   -webkit-box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
           box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
+}
+
+.dropdown__li {
+  color: white;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 20px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown__li:hover {
+  cursor: pointer;
 }
 
 .provider {
@@ -1102,6 +1120,7 @@ html .row {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 87px;
 }
 
 .provider__button {
@@ -1111,8 +1130,8 @@ html .row {
   height: 70px;
   border-radius: 35px;
   border: 0;
-  margin-bottom: 378px;
   padding-top: 50px;
+  margin-bottom: 378px;
 }
 
 .provider__button:hover {
@@ -1198,8 +1217,7 @@ html .row {
 }
 
 .express__card__button {
-  height: 50px;
-  width: 50px;
+  padding: 25px 25px;
   background: url(../img/arrow-down-white.png) no-repeat center;
   border: none;
   border-left: 2px solid white;
@@ -1284,6 +1302,7 @@ html .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .express__field--logistics {
@@ -1342,10 +1361,8 @@ html .row {
 .open {
   background-color: #ffcc00;
   color: #ba0000;
-  width: 436px;
-  max-width: 436px;
   padding-top: 15px;
-  padding-bottom: 16.5px;
+  padding-bottom: 16px;
   margin: 0;
 }
 
@@ -1355,9 +1372,17 @@ html .row {
 
 .open__button {
   background-color: #ffcc00;
-  border-left: 2px solid #ba0000;
-  height: 51px;
+  padding: 25px 25px;
   margin-top: -2px;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  border-left: 0;
+  border-right: 2px solid #ba0000;
+  max-height: 51px;
+}
+
+.express__field__text {
+  width: 100%;
 }
 
 .excellence {
@@ -1440,6 +1465,7 @@ html .row {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 2px solid #ba0000;
+  cursor: pointer;
 }
 
 .logotypes__photodune {
@@ -1453,6 +1479,7 @@ html .row {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 2px solid #ba0000;
+  cursor: pointer;
 }
 
 .logotypes__graphicriver {
@@ -1466,6 +1493,7 @@ html .row {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 2px solid #ba0000;
+  cursor: pointer;
 }
 
 .logotypes__codecanyon {
@@ -1479,6 +1507,7 @@ html .row {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: 2px solid #ba0000;
+  cursor: pointer;
 }
 
 .footer {

@@ -18,7 +18,11 @@ $(document).ready(function () {
   var expressPointButton = $('.express__point__button');
   var expressLoginButton = $('.express__login__button');
   var expressTrackButton = $('.express__track__button');
-  
+  var servicesDropdown = $('.dropdown__ul');
+  var servicesLocation = $('.dropdown__text');
+  var servicesCountry = $('#location');
+
+
   $(document).on('click', '.header__navigation__button', function () {
     searchBlock.slideToggle();
     return false;
@@ -63,7 +67,23 @@ $(document).ready(function () {
     expressTrackField.toggleClass('open__border');
     return false;
   });
-  
+    $(document).on('click', '.dropdown__button', function () {
+      servicesLocation.toggleClass('dn');
+      servicesDropdown.slideToggle();
+    return false;
+  });
+  $(document).on('click', '.russia', function () {
+    servicesLocation.toggleClass('dn');
+    servicesDropdown.slideToggle();
+    document.getElementById("location").innerHTML = "Russia";
+    return false;
+  });
+    $(document).on('click', '.usa', function () {
+    servicesLocation.toggleClass('dn');
+    servicesDropdown.slideToggle();
+    document.getElementById("location").innerHTML = "USA";
+    return false;
+  });
 
 
   const select = document.querySelector('select');
@@ -91,4 +111,22 @@ $(document).ready(function () {
       }
     }
   }
+
+  
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '465',
+      width: '1150',
+      videoId: 'OsXjF63_Etw',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
 });

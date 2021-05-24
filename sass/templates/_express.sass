@@ -20,8 +20,7 @@
       padding-left: 20px
       font-weight: 500
     &__button
-      height: 50px
-      width: 50px
+      padding: 25px 25px
       background: url(../img/arrow-down-white.png) no-repeat center
       border: none
       border-left: 2px solid white
@@ -70,6 +69,7 @@
     text-transform: uppercase
     display: flex
     justify-content: space-between
+    width: 100%
     &--logistics
       border: 2px solid $red
       padding: 0px
@@ -108,15 +108,18 @@
 .open
   background-color: $yellow
   color: $red
-  width: 436px
-  max-width: 436px
   padding-top: 15px
-  padding-bottom: 16.5px
+  padding-bottom: 16px
   margin: 0
   &__border
     border: 2px solid $yellow
   &__button
     background-color: $yellow
-    border-left: 2px solid $red
-    height: 51px
+    padding: 25px 25px
     margin-top: -2px
+    transform: rotateZ(180deg)
+    border-left: 0
+    border-right: 2px solid $red
+    max-height: 51px
+.express__field__text
+  width: 100%

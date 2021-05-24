@@ -34,7 +34,7 @@
     &--last
       background-color: $red
       max-width: 270px
-      height: 340px
+      max-height: 381px
     &__tittle
       color: $red
       text-transform: uppercase
@@ -84,6 +84,7 @@
       padding: 15px 40px
       border: 0
       margin-top: 20px
+      margin-bottom: 15px
       &:hover
         cursor: pointer
         transition: 0.6s
@@ -93,6 +94,8 @@
   background-color: #9d0000
   justify-content: space-between
   align-items: center
+  &__menu
+
   &__text
     color: white
     font-size: 16px
@@ -100,7 +103,7 @@
     font-style: normal
     letter-spacing: normal
     margin-left: 20px
-
+    padding: 0
   &__button
     width: 50px
     height: 50px
@@ -109,3 +112,15 @@
     &:hover
       cursor: pointer
       box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4)
+  &__li
+    color: white
+    list-style: none
+    font-size: 18px
+    font-weight: 500
+    font-style: normal
+    margin-left: 20px
+    padding-bottom: 15px
+    background-color: transparent
+    border: 0
+    &:hover
+      cursor: pointer
