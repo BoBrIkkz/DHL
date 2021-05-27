@@ -32,7 +32,7 @@
         "en": " Country Profile",
     }, 
     "main__tittle" :  {
-        "ru": "Мы Доставляем<br> Быстро",
+        "ru": "Доставим<br> Быстро",
         "en": "We Deliver<br> With Speed",
     }, 
     "main__text" :  {

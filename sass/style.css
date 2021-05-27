@@ -647,13 +647,21 @@ html .row {
 
 @media screen and (max-width: 420px) {
   .header {
-    font-size: 12px;
+    font-size: 11px;
   }
   .header__navigation__search__input {
     max-width: 120px;
   }
   .provider__img {
     max-width: 337px;
+  }
+  .main__tagline {
+    font-size: 1.1rem !important;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    text-transform: uppercase;
   }
 }
 
@@ -1306,7 +1314,7 @@ html .row {
 }
 
 .express__field--logistics {
-  border: 2px solid #ba0000;
+  border: 2px solid #ba0000 !important;
   padding: 0px;
   margin: 10px 0px;
   color: #ba0000;
